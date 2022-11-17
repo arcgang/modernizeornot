@@ -1,0 +1,168 @@
+.modernization-wrapper {
+    padding-top: 30px;
+    border: 1px solid #93a8a9;
+    margin-bottom: 30px;
+}
+
+.content-wrapper {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+}
+
+.modernization-title .title {
+    color: #3498db;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modernization-params label {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.modernization-params span {
+    float: right;
+}
+
+.modernization-params input {
+    border: 1px solid #222;
+    border-radius: 15% !important;
+}
+
+
+.label1,
+.label2,
+.label3,
+.label4 {
+    color: #222;
+    font-size: 16px;
+}
+
+
+/* ====
+Range Slider
+================*/
+.rangeslider,
+.rangeslider__fill {
+    display: block;
+    border-radius: 10px;
+}
+
+.rangeslider {
+    position: relative;
+    margin: 10px auto;
+}
+
+.rangeslider:after {
+    top: 50%;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 5px;
+    margin-top: -2.5px;
+    border-radius: 5px;
+    position: absolute;
+    background: #3498db;
+}
+
+.rangeslider--horizontal {
+    width: 100%;
+    height: 28px;
+}
+
+.rangeslider--vertical {
+    width: 5px;
+    min-height: 150px;
+    max-height: 100%;
+}
+
+.rangeslider--disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+}
+
+.rangeslider__fill {
+    position: absolute;
+    background: #64c832;
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 0;
+    height: 100%;
+}
+
+.rangeslider--vertical .rangeslider__fill {
+    bottom: 0;
+    width: 100%;
+}
+
+.rangeslider__handle {
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-top: -14px;
+    background: white;
+    position: absolute;
+    background: #64c832;
+    border: 3px solid #fff;
+    border-radius: 50% !important;
+    display: inline-block;
+}
+
+.rangeslider__handle:active {
+    background: #64c832;
+}
+
+.rangeslider__fill,
+.rangeslider__handle {
+    z-index: 1;
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 50%;
+    height: 5px;
+    margin-top: -2.5px;
+}
+
+
+/* =====
+Decision button
+========*/
+#decide-modernization {
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    margin: 20px auto 30px;
+    background: #ffb300;
+    border-radius: 15% !important;
+}
+
+/* =====
+Calculate Modernization Score
+========*/
+#ModernizationResult {
+    border-top: 2px solid #222;
+}
+
+#ModernizationResult h4 {
+    font-weight: normal;
+    text-align: center;
+}
+
+#ModernizationResult .worth-between {
+    font-size: 20px;
+}
+
+#ModernizationResult label#sum {
+    color: #3498db;
+}
+
+#ModernizationResult label#modernization_statement {
+    font-size: 24px;
+    color: #3498db;
+}

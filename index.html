@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modernize or not to Modernize</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <form name="Modernization_Decision_Maker">
+        <div class="modernization-wrapper col-md-12">
+            <div class="content-wrapper">
+                <div class="modernization-title">
+                    <div class="title clearfix">Should we Modernize the application?</div>
+                    <p>Evaluate the following scenarios and decide whether to modernize an application or not. Move the
+                        range sliders while answering the questions</p>
+                    <br />
+                </div>
+                <div class="modernization-params">
+                    <label for="revenue-generating">What is the potential of additional revenue generation?</label>
+                    <span class="label1"> <input type="number" id="input1" min="0" max="10"></input></span>
+                    <input id="field1" name="field1" type="range" min="0" max="10" value="5" data-rangeslider>
+
+                    <label for="operational-efficiency">What is the potential of business operational
+                        efficiency?</label>
+                    <span class="label2"> <input type="number" id="input2" min="0" max="10"></input></span>
+                    <input id="field2" name="field2" type="range" min="0" max="10" value="5" data-rangeslider>
+
+                    <label for="product-consolidation">Can it be consolidated to a new product?</label>
+                    <span class="label3"> <input type="number" id="input3" min="0" max="10"></input></span>
+                    <input id="field3" name="field3" type="range" min="0" max="10" value="5" data-rangeslider>
+
+
+                    <label for="business-function-importance">Are the business functions important for the business
+                        domain?</label>
+                    <span class="label4"> <input type="number" id="input4" min="0" max="10"></input></span>
+                    <input id="field4" name="field4" type="range" min="0" max="10" value="5" data-rangeslider>
+
+
+                    <label for="additional-features">Is there a scope for additional features in the next one
+                        year?</label>
+                    <span class="label5"> <input type="number" id="input5" min="0" max="10"></input></span>
+                    <input type="range" id="field5" name="field5" type="range" min="0" max="10" value="5"
+                        data-rangeslider>
+
+                    <label for="change-management">Will there be significant change management?</label>
+                    <span class="label6"> <input type="number" id="input6" min="0" max="10"></input></span>
+                    <input id="field6" name="field6" type="range" min="0" max="10" value="5" data-rangeslider>
+
+                    <label for="target-user-base">How large is the target user base?</label>
+                    <span class="label7"> <input type="number" id="input7" min="0" max="10"></input></span>
+                    <input id="field7" name="field7" type="range" min="0" max="10" value="5" data-rangeslider>
+
+                    <label for="customer-experience">Will it increase the overall user experience?</label>
+                    <span class="label8"> <input type="number" id="input8" min="0" max="10"></input></span>
+                    <input id="field8" name="field8" type="range" min="0" max="10" value="5" data-rangeslider>
+
+
+                </div>
+
+                <input type="button" id="decide-modernization" value="Decide"
+                    onclick="ModernizationScoreCalculator(Modernization_Decision_Maker)" />
+
+                <div id="ModernizationResult">
+                    <div class="panel panel-group">
+                        <div class="panel-body">
+                            <h4>
+                                Total Score: <label for="sum" id="sum" name="sum"></label>
+                            </h4>
+                            <br>
+                            <h4 class="worth-between">
+                                Let us
+                                <label for="modernization_statement" id="modernization_statement"
+                                    name="modernization_statement"></label>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--END PI Calculator Range Slider-->
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
