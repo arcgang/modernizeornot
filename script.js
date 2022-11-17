@@ -212,7 +212,7 @@ $(function () {
 
 function ModernizationScoreCalculator(form) {
     $("#ModernizationResult").slideDown();
-    $('html, body').animate({ scrollTop: ($('#ModernizationResult').offset().top) }, 1500);
+    $('html, body').animate({ scrollTop: ($('#ModernizationResult').offset().top) }, 300);
 
     const revenueWeight = 0.20;
     const efficiencyWeight = 0.20;
@@ -221,7 +221,7 @@ function ModernizationScoreCalculator(form) {
     const additionalFeaturesWeight = 0.05;
     const changeManagementWeight = 0.05;
     const targetUserWeight = 0.10;
-    const uxWeight = 0.10;
+    const uxWeight = 0.20;
 
 
     score = parseFloat($('#field1').val()) * revenueWeight +
@@ -248,16 +248,16 @@ function ModernizationScoreCalculator(form) {
 
     totalScore = score;
 
-    if (totalScore > 3.5) {
+    if (totalScore > 4.5) {
         decision = " Modernize";
-    } else if (totalScore == 4.5) {
+    } else if (totalScore <= 4.5 && totalScore >= 4) {
         decision = "Think more!";
     } else {
         decision = " not Modernize";
 
     }
 
-    $('#sum').text("" + totalScore.toLocaleString());
+    $('#total').text("" + totalScore.toLocaleString());
 
     $('#modernization_statement').text(" " + decision.toLocaleString());
 }

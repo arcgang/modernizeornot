@@ -6,13 +6,13 @@
 
 .content-wrapper {
     display: block;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
 }
 
 .modernization-title .title {
     color: #3498db;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
@@ -66,7 +66,7 @@ Range Slider
     margin-top: -2.5px;
     border-radius: 5px;
     position: absolute;
-    background: #3498db;
+    background: #dbc234;
 }
 
 .rangeslider--horizontal {
@@ -81,7 +81,7 @@ Range Slider
 }
 
 .rangeslider--disabled {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0.4;
 }
 
@@ -146,7 +146,7 @@ Decision button
 Calculate Modernization Score
 ========*/
 #ModernizationResult {
-    border-top: 2px solid #222;
+    border-top: 2px solid rgb(27, 27, 28);
 }
 
 #ModernizationResult h4 {
@@ -158,7 +158,7 @@ Calculate Modernization Score
     font-size: 20px;
 }
 
-#ModernizationResult label#sum {
+#ModernizationResult label#total {
     color: #3498db;
 }
 
