@@ -248,7 +248,7 @@ function ModernizationScoreCalculator(form) {
 
     totalScore = score;
 
-    if (totalScore > 4.5) {
+    if (totalScore > 5.5) {
         decision = " Modernize";
     } else if (totalScore <= 4.5 && totalScore >= 4) {
         decision = "Think more!";
